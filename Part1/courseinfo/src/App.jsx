@@ -24,4 +24,42 @@ const App = () => {
   )
 }
 
+const Header = (props) =>{
+  return(
+    <div>
+      <p>
+        The course name is {props.course}
+      </p>
+    </div>
+  )
+
+}
+
+const Content = (props) =>{
+  return(
+    <div>
+      <p>
+        {props.part1} {props.exercises1}
+        {props.part2} {props.exercises2}
+        {props.part3} {props.exercises3}
+      </p>
+    </div>
+  )
+
+}
+
+
+const Total = (props)=>{
+  return(
+    <div>
+      <p>
+        Number of excercises {exercises1+exercises2+exercises3}
+      </p>
+    </div>
+  )
+
+
+  
+}
+
 export default App
